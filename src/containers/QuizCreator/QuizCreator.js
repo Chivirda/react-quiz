@@ -42,7 +42,7 @@ class QuizCreator extends Component {
   }
 
   createQuizHandler = () => {
-    
+
   }
 
   chahgeHandler = (value, controlName) => {
@@ -52,7 +52,6 @@ class QuizCreator extends Component {
   renderControls() {
     return Object.keys(this.state.formControls).map((controlName, index) => {
       const control = this.state.formControls[controlName]
-
       return (
         <Auxiliary key={controlName + index}>
           <Input
