@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import classes from './QuizCreator.module.css'
-import Button from "../../components/UI/Button/Button"
-import Input from "../../components/UI/Input/Input";
-import Select from "../../components/UI/Select/Select";
+import Button from '../../components/UI/Button/Button'
+import Input from '../../components/UI/Input/Input'
+import Select from '../../components/UI/Select/Select'
 import {createControl, validate, validateForm} from '../../form/formFramework'
-import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
+import Auxiliary from '../../hoc/Auxiliary/Auxiliary'
 import axios from 'axios'
 
 const createOptionControl = number => {
@@ -41,7 +41,7 @@ class QuizCreator extends Component {
     event.preventDefault()
   }
 
-  addQuestionHandler = event => {
+  addQuestionHandler = () => {
 
     const quiz = this.state.quiz.concat()
     const index = quiz.length + 1
